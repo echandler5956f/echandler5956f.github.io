@@ -1,5 +1,5 @@
 # Ethan Chandler - Portfolio
-One page portfolio including my most recent work on Legged Roboticsc
+One page portfolio including my most recent work on Legged Robotics
 
 [Papaya](https://www.papayatemplates.com)
 [@jrdnbwmn](https://www.twitter.com/jrdnbwmn)
