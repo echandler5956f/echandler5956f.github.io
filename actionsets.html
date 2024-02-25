@@ -120,7 +120,32 @@
 							<div class="row">
 								<div class="col-md-12 side">
 									<h3>Project Description</h3>
-									<p>TODO: Fill in project description
+									<p>In this work, my research team developed planners for constrained
+										hybrid systems. We propose a
+										method which ensures action composability and satisfies dynamic
+										constraints, resulting in a newly devised feasible trajectory model
+										that enables planning over sets of trajectories. Our approach
+										to trajectory planning leverages differential flatness and Bezier
+										curves to transform arbitrary constraint spaces into a common
+										design space. These trajectory sets are built offline, with each
+										set representing an action in a library. The composability of these sets is
+										determined offline. If two sets are composable, a trajectory can be planned
+										through their intersection. This allows us to formulate the feasability problem
+										as a simple graph search.
+									</p>
+									<p>
+										At runtime, we determine which set the starting state and ending state lie
+										within, and perform the graph search mentioned apriori. Now that we know what
+										sets a feasible solution may traverse, we can apply traditional trajectory
+										optimization aproaches to plan within each set, requiring that the end state
+										coincide with the starting state of the next set. We present
+										a simple thought experiment using a swing-up pendulum, and
+										demonstrate the effectiveness of our approach on a differential
+										drive robot in an obstacle field, demonstrating its ability to
+										generate feasible trajectories in the face of highly non-convex
+										constraints. Our approach offers a promising avenue for enabling
+										robots to perform complex actions in dynamic and constrained
+										environments.
 									</p>
 								</div>
 								<div class="col-md-12 side">
