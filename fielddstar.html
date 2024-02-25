@@ -120,7 +120,22 @@
 							<div class="row">
 								<div class="col-md-12 side">
 									<h3>Project Description</h3>
-									<p>TODO: Fill in project description
+									<p>Field D* is an incremental graph-based path planning algoirithm developed by
+										researchers from CMU in "Field D*: An Interpolation-based Path Planner
+										and Replanner". In this project, I sought to expand upon this work by developing
+										a multi-resolution version of Field D* that uses quadtrees enumerated on
+										adaptive Hilbert curves to represent the environment. This approach allows for
+										efficient path planning in large-scale environments by using a multi-resolution
+										representation of the environment. The algorithm is capable of planning paths in
+										environments with obstacles and dynamic changes in the environment.</p>
+									<p>The project was implemented in C++ for use with ROS. After testing the planner on
+										simulated environments, it was found to yield shorter paths than the state of
+										the art SmacLatticePlanner in the ROS2 nav2 stack, which showcases its
+										capabilities.
+										However, it was discovered that while the replanning time is substantially
+										smaller han the SmacLatticePlanner, the initial planning time was
+										longer. Future work will focus on optimizing the
+										initial planning time and integrating the planner into the ROS2 nav2 stack.</p>
 									</p>
 								</div>
 								<div class="col-md-12 side">
