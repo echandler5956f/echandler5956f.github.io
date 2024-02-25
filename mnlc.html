@@ -111,7 +111,11 @@
 							<div class="col-md-12">
 								<div class="about-inner">
 									<center>
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/w6QNNanlD5A?si=6pvi-bf4S1CDYPDh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										<iframe width="560" height="315"
+											src="https://www.youtube.com/embed/w6QNNanlD5A?si=6pvi-bf4S1CDYPDh"
+											title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen></iframe>
 									</center>
 								</div>
 							</div>
@@ -139,8 +143,20 @@
 										frontiers, or use a greedy algorithm to explore the frontiers that are the
 										farthest away. However, these methods are not optimal, as they do not take into
 										account the size of the frontiers, nor do they take into account the amount of
-										time it could potentially take to reach the frontiers. In this work, I used
-										locally
+										time it could potentially take to reach the frontiers. In this work, I used a
+										combination of a locally expandng RRT and a globally expanding RRT, which makes
+										the algorithm aware of both short term goals and long term progress.
+									</p>
+									<p>RRT's are used because they
+										are probabalistically likely to expand towards the
+										largest Voronoi region. Since the RRT's return many potential frontier points, I
+										needed to determine which one was optimal. I used HDBscan, a density-based
+										clustering algorithm, to determine the frontier centroids. Then, using a voting
+										algorithm, which allows each 'agent' to vote on the best frontier based on size
+										of the frontier, distance to frontier, and potential for new information (larger
+										number of unexplored cells within a radius), I was able to determine the optimal
+										frontier goal. This is essentially a multi-objective optimization, solved
+										using a voting algorithm.
 									</p>
 								</div>
 								<div class="col-md-12 side">
