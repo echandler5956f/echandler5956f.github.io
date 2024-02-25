@@ -120,7 +120,16 @@
 							<div class="row">
 								<div class="col-md-12 side">
 									<h3>Project Description</h3>
-									<p>TODO: Fill in project description
+									<p>In this project, I developed a mapping and navigation controller (MNLC) for a
+										TurtleBot using ROS and Gazebo. MNLC uses SLAM to take in map data, then builds
+										a discrete
+										costmap and creates padding around obstacles, which mark whether the robot can
+										pass without collision. The robot then uses frontier detection (based on locally
+										expanding RRT) and image processing to find the optimal fronier goal, which is
+										defined by the centroid of the largest edge between explored and unexplored
+										space. After the optimal frontier goal is found, the robot plans to the goal
+										using D* Lite, and executes the plan using an adaptive pure pursuit controller.
+										The process repeats until no more frontiers are detected.
 									</p>
 								</div>
 								<div class="col-md-12 side">
