@@ -111,22 +111,28 @@
 							<div class="col-md-12">
 								<div class="about-inner">
 									<video controls width="100%" autoplay>
-										<source src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/HURONRealRobotWalking1.mp4" type="video/mp4">
-									  Your browser does not support the video tag.
-									  </video>
+										<source
+											src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/HURONRealRobotWalking1.mp4"
+											type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
 								</div>
 								<br>
 								<div class="about-inner">
 									<video controls width="100%" autoplay>
-										<source src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/push_recovery.mp4" type="video/mp4">
-									  Your browser does not support the video tag.
-									  </video>
+										<source
+											src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/push_recovery.mp4"
+											type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
 								</div>
 								<br>
 								<div class="about-inner">
-									<img class="img-responsive" src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/HURONTakingstep.gif" alt="About">
+									<img class="img-responsive"
+										src="images/Portfolio/Projects and Research/Legged Robots/HURON Push Recovery/HURONTakingstep.gif"
+										alt="About">
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -137,10 +143,17 @@
 									<h3>Project Description</h3>
 									<p>The goal of this work is to expand HURON's (WPI's custom-built humanoid) existing
 										push recovery controller, which used sliding mode control (SMC) and null-space
-										resolution to recover from external disturbances in the sagitall plane. The new
+										resolution to recover from external disturbances in the sagittal plane, driving
+										both the CoM and joint configuration to their initial values. The new
 										controller enabled push recovery by taking a step, and used the centroidal
 										momentum dynamics to generate the optimal contact wrenches and joint
-										trajectories, which could then be tracked with a QP whole body controller.
+										trajectories, which could then be tracked with my custom QP-based whole body
+										controller. See the code on <a
+											href="https://github.com/echandler5956f/Galileo/blob/main/python/quadratic_wbc.py">Github</a>
+									</p>
+									<p>With the QP-based whole-body controller, I was able to track CoP trajectories,
+										allowing push recovery from external disturbances of up to 300 N·s in Gazebo.
+										The next step is to test the work on the real robot.
 									</p>
 								</div>
 							</div>
