@@ -1215,4 +1215,19 @@ h1, h2, h3, h4, h5, h6, figure {
     display: block;
 }
 
+.work-grid.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2; /* ensures the video stays above the overlay */
+}
+
+
+.work-grid::before {
+    z-index: 1;
+}
+
+
 /*# sourceMappingURL=style.css.map */
